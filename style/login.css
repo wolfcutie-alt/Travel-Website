@@ -263,3 +263,27 @@ footer a:hover {
         height: 1vh;
     }
 }
+
+@media screen and (max-width: 430px) {
+    nav {
+        height: 12vh;
+    }
+
+    #desktop-nav {
+        display: none;
+    }
+
+    #hamburger-nav {
+        display: flex;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footer-links a {
+        font-size: small;
+    }
+}

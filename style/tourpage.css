@@ -95,6 +95,7 @@ nav a:hover {
     max-height: 0;
     overflow: scroll;
     transition: all 0.3s ease-in-out;
+    height: 200px;
 }
 
 .menu-links a {
@@ -266,7 +267,7 @@ nav a:hover {
     font-size: 20px;
     padding: 20px;
     text-align: center;
-    height: 50%;
+    height: 30%;
     font-size: 30px;
 }
   
@@ -354,5 +355,38 @@ footer a:hover {
         display: flex;
         margin-bottom: 40px;
         height: 1vh;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    nav {
+        height: 12vh;
+    }
+
+    #desktop-nav {
+        display: none;
+    }
+
+    #hamburger-nav {
+        display: flex;
+    }
+
+    .dropbtn {
+        width: 130px;
+    }
+
+    .overlay {
+        width: 82%;
+        height: 30%;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footer-links a {
+        font-size: small;
     }
 }

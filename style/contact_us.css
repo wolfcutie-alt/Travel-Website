@@ -301,3 +301,39 @@ footer a:hover {
         height: 1vh;
     }
 }
+
+@media screen and (max-width: 430px) {
+    nav {
+        height: 12vh;
+    }
+
+    #desktop-nav {
+        display: none;
+    }
+
+    #hamburger-nav {
+        display: flex;
+    }
+
+    .contact h1 {
+        font-size: 25px;
+    }
+
+    .contact p {
+        font-size: 15px;
+    }
+
+    form {
+        width: 250px;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footer-links a {
+        font-size: small;
+    }
+}
