@@ -29,7 +29,7 @@ nav, .nav-links {
 nav {
     background-color: #A0E7E5;
     grid-area: nav;
-    height: 17vh;
+    height: 10vh;
     justify-content: space-around;
     align-items: center;
 }
@@ -46,7 +46,7 @@ nav i {
 .logo {
     font-size: 30px;
     color: black;
-    font-weight: lighter;
+    font-weight: bold;
     padding-left: 20px;
 }
 
