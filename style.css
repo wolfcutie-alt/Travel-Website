@@ -29,7 +29,7 @@ nav, .nav-links {
 nav {
     background-color: #A0E7E5;
     grid-area: nav;
-    height: 10vh;
+    height: 13vh;
     justify-content: space-around;
     align-items: center;
 }
