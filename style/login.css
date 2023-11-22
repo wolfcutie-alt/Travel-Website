@@ -233,3 +233,33 @@ footer a:hover {
     color: #F2F2F2;
     transition: 0.5s;
 }
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 960px) {
+    nav {
+        height: 9vh;
+    }
+
+    .logo {
+        margin-right: 20px;
+    }
+
+    .carousel-picture {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer {
+        display: flex;
+        font-size: large;
+        flex-direction: column;
+        height: 6vh;
+    }
+
+    .footer-links {
+        display: flex;
+        margin-bottom: 40px;
+        height: 1vh;
+    }
+}

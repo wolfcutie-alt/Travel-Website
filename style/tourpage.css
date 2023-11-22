@@ -17,7 +17,7 @@ html {
 #page {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0fr 1fr 0.2fr;
+    grid-template-rows: 0.1fr 0.8fr 0.2fr;
     grid-template-areas: "nav nav nav nav" "carousel carousel carousel carousel" "footer footer footer footer";
 }
 
@@ -207,6 +207,13 @@ nav a:hover {
     grid-area: carousel;
 }
 
+.carousel-picture {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .fa-arrow-left {
     padding-left: 50px;
 }
@@ -215,20 +222,10 @@ nav a:hover {
     padding-right: 50px;
 }
 
-.carousel-picture {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.carousel img {
-    width: 20%;
-    height: 70%;
-}
-
 .container {
-    display: flex;
-    flex-direction: column;
+    position: relative;
+    width: 50%;
+    max-width: 300px;
 }
 
 .container img {
@@ -237,19 +234,46 @@ nav a:hover {
     height: auto;
 }
 
+.carousel .button {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .carousel a {
     background-color: #FFAEBC;
     color: white;
     padding: 16px;
-    margin: 50px auto;
     font-size: 16px;
     border: none;
     cursor: pointer;
     border-radius: 50px;
     width: 100px;
     text-align: center;
+    margin: 30px 0;
 }
 
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 86%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    height: 50%;
+    font-size: 30px;
+}
+  
+  /* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+    opacity: 1;
+}
 
 /* FOOTER */
 
@@ -258,7 +282,7 @@ footer {
     background-color: #A0E7E5;
     padding: 30px 0;
     justify-content: space-between;
-    height: 10vh;
+    height: 11vh;
 }
 
 footer .copyright {
@@ -273,7 +297,7 @@ footer .copyright {
 .footer-links {
     display: flex;
     justify-content: space-evenly;
-    height: 9vh;
+    height: 5vh;
 }
 
 .footer-links i {
@@ -289,4 +313,46 @@ footer .copyright {
 footer a:hover {
     color: #F2F2F2;
     transition: 0.5s;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 960px) {
+    nav {
+        height: 9vh;
+    }
+
+    .logo {
+        margin-right: 20px;
+    }
+
+    .carousel-picture {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container {
+        margin: 50px;
+    }
+
+    .carousel-picture i {
+        display: none;
+    }
+
+    .carousel .button {
+        display: none;
+    }
+
+    footer {
+        display: flex;
+        font-size: large;
+        flex-direction: column;
+        height: 5vh;
+    }
+
+    .footer-links {
+        display: flex;
+        margin-bottom: 40px;
+        height: 1vh;
+    }
 }
