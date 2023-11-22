@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f643c9206b.js" crossorigin="anonymous"></script>
+    <title>TravelNZ</title>
+</head>
+<body>
+    <div id="homepage">
+        <nav id='desktop-nav'>
+            <h1>
+                <a href="./index.html" class="logo">TravelNZ</a>
+            </h1>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="./index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                    <li><a href="./pages/tourpage.html"><i class="fa-solid fa-compass"></i>Book a Tour</a></li>
+                    <li><a href="./pages/contact_us.html"><i class="fa-solid fa-phone"></i>Contact Us</a></li>
+                    <li><a href="./pages/login.html"><i class="fa-solid fa-right-to-bracket"></i>Login / Signup</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <h1>
+                <a href="./index.html" class="logo">TravelNZ</a>
+            </h1>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="./index.html" onclick="toggleMenu()"><i class="fa-solid fa-house"></i>Home</a></li>
+                    <li><a href="./pages/tourpage.html" onclick="toggleMenu()"><i class="fa-solid fa-compass"></i>Book a Tour</a></li>
+                    <li><a href="./pages/contact_us.html" onclick="toggleMenu()"><i class="fa-solid fa-phone"></i>Contact Us</a></li>
+                    <li><a href="./pages/login.html" onclick="toggleMenu()"><i class="fa-solid fa-right-to-bracket"></i>Login / Signup</a></li>
+                </div>
+            </div>
+        </nav>
+        <div class="hero-section">
+            <div class="hero-section-text">
+                <h1>Explore the beauty of New Zealand</h1>
+                <a href="./pages/tourpage.html" class="btn-main">Book a Tour</a>
+            </div>
+        </div>
+        <div class="carousel-desktop">
+            <div class="carousel-text">
+                <h1>Gallery</h1>
+            </div>
+            <div class="carousel-picture">
+                <i class="fa-solid fa-arrow-left"></i>
+                <img src="./assets/carousel1.jpg" alt="">
+                <img src="./assets/carousel2.jpg" alt="">
+                <img src="./assets/carousel3.jpg" alt="">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </div>
+        <footer>
+            <div>
+                <ul class="footer-links">
+                    <li><a href="./index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                    <li><a href="./pages/tourpage.html"><i class="fa-solid fa-compass"></i>Book a Tour</a></li>
+                    <li><a href="./pages/contact_us.html"><i class="fa-solid fa-phone"></i>Contact Us</a></li>
+                    <li><a href="./pages/login.html"><i class="fa-solid fa-right-to-bracket"></i>Login / Signup</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>TravelNZ &copy; 2023</p>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
